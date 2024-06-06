@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1EACDA5B2C118FFE0067EB6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDA5A2C118FFE0067EB6D /* AppDelegate.swift */; };
-		1EACDA5D2C118FFE0067EB6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDA5C2C118FFE0067EB6D /* SceneDelegate.swift */; };
-		1EACDA5F2C118FFE0067EB6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDA5E2C118FFE0067EB6D /* ViewController.swift */; };
 		1EACDA622C118FFE0067EB6D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1EACDA612C118FFE0067EB6D /* Base */; };
 		1EACDA652C118FFE0067EB6D /* KinjalGitRepositories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDA632C118FFE0067EB6D /* KinjalGitRepositories.xcdatamodeld */; };
 		1EACDA672C1190000067EB6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EACDA662C1190000067EB6D /* Assets.xcassets */; };
 		1EACDA6A2C1190000067EB6D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1EACDA692C1190000067EB6D /* Base */; };
+		3AE6620705615A3CD357ACAC /* Pods_KinjalGitRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C603F72EC42E517CEA3AE2 /* Pods_KinjalGitRepositories.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE61F4F40497A32E54D6ACC /* Pods-KinjalGitRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinjalGitRepositories.debug.xcconfig"; path = "Target Support Files/Pods-KinjalGitRepositories/Pods-KinjalGitRepositories.debug.xcconfig"; sourceTree = "<group>"; };
 		1EACDA572C118FFE0067EB6D /* KinjalGitRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinjalGitRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EACDA5A2C118FFE0067EB6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EACDA5C2C118FFE0067EB6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1EACDA5E2C118FFE0067EB6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EACDA612C118FFE0067EB6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EACDA642C118FFE0067EB6D /* KinjalGitRepositories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KinjalGitRepositories.xcdatamodel; sourceTree = "<group>"; };
 		1EACDA662C1190000067EB6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EACDA692C1190000067EB6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EACDA6B2C1190000067EB6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EFD41022C3AC6A53D04084 /* Pods-KinjalGitRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinjalGitRepositories.release.xcconfig"; path = "Target Support Files/Pods-KinjalGitRepositories/Pods-KinjalGitRepositories.release.xcconfig"; sourceTree = "<group>"; };
+		89C603F72EC42E517CEA3AE2 /* Pods_KinjalGitRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinjalGitRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE6620705615A3CD357ACAC /* Pods_KinjalGitRepositories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +45,8 @@
 			children = (
 				1EACDA592C118FFE0067EB6D /* KinjalGitRepositories */,
 				1EACDA582C118FFE0067EB6D /* Products */,
+				AA0458039C41AC5EA2A141C6 /* Pods */,
+				8608AECFC69CA49F9737E608 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				1EACDA5A2C118FFE0067EB6D /* AppDelegate.swift */,
-				1EACDA5C2C118FFE0067EB6D /* SceneDelegate.swift */,
-				1EACDA5E2C118FFE0067EB6D /* ViewController.swift */,
 				1EACDA602C118FFE0067EB6D /* Main.storyboard */,
 				1EACDA662C1190000067EB6D /* Assets.xcassets */,
 				1EACDA682C1190000067EB6D /* LaunchScreen.storyboard */,
@@ -70,6 +71,24 @@
 			path = KinjalGitRepositories;
 			sourceTree = "<group>";
 		};
+		8608AECFC69CA49F9737E608 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89C603F72EC42E517CEA3AE2 /* Pods_KinjalGitRepositories.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0458039C41AC5EA2A141C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CE61F4F40497A32E54D6ACC /* Pods-KinjalGitRepositories.debug.xcconfig */,
+				63EFD41022C3AC6A53D04084 /* Pods-KinjalGitRepositories.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EACDA6E2C1190000067EB6D /* Build configuration list for PBXNativeTarget "KinjalGitRepositories" */;
 			buildPhases = (
+				2D9C769CE21F3C988DCD8C33 /* [CP] Check Pods Manifest.lock */,
 				1EACDA532C118FFE0067EB6D /* Sources */,
 				1EACDA542C118FFE0067EB6D /* Frameworks */,
 				1EACDA552C118FFE0067EB6D /* Resources */,
+				03539427975A10DDBC4DBBC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +157,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03539427975A10DDBC4DBBC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinjalGitRepositories/Pods-KinjalGitRepositories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinjalGitRepositories/Pods-KinjalGitRepositories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinjalGitRepositories/Pods-KinjalGitRepositories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D9C769CE21F3C988DCD8C33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinjalGitRepositories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1EACDA532C118FFE0067EB6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EACDA5F2C118FFE0067EB6D /* ViewController.swift in Sources */,
 				1EACDA5B2C118FFE0067EB6D /* AppDelegate.swift in Sources */,
-				1EACDA5D2C118FFE0067EB6D /* SceneDelegate.swift in Sources */,
 				1EACDA652C118FFE0067EB6D /* KinjalGitRepositories.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +352,7 @@
 		};
 		1EACDA6F2C1190000067EB6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE61F4F40497A32E54D6ACC /* Pods-KinjalGitRepositories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +381,7 @@
 		};
 		1EACDA702C1190000067EB6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63EFD41022C3AC6A53D04084 /* Pods-KinjalGitRepositories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
