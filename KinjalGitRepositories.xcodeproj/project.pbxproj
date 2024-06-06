@@ -61,6 +61,9 @@
 		1EACDB522C11C6D00067EB6D /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB512C11C6D00067EB6D /* RepositoriesViewModel.swift */; };
 		1EACDB562C11C7520067EB6D /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACDB552C11C7520067EB6D /* RepositoriesTableViewCell.xib */; };
 		1EACDB572C11C7520067EB6D /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB542C11C7520067EB6D /* RepositoriesTableViewCell.swift */; };
+		1EACDB5C2C11CB340067EB6D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EACDB5B2C11CB340067EB6D /* Detail.storyboard */; };
+		1EACDB5E2C11CB620067EB6D /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB5D2C11CB620067EB6D /* RepositoryDetailsViewController.swift */; };
+		1EACDB612C11CD100067EB6D /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB602C11CD100067EB6D /* RepositoryDetailsViewModel.swift */; };
 		3AE6620705615A3CD357ACAC /* Pods_KinjalGitRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C603F72EC42E517CEA3AE2 /* Pods_KinjalGitRepositories.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +126,9 @@
 		1EACDB512C11C6D00067EB6D /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		1EACDB542C11C7520067EB6D /* RepositoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewCell.swift; sourceTree = "<group>"; };
 		1EACDB552C11C7520067EB6D /* RepositoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesTableViewCell.xib; sourceTree = "<group>"; };
+		1EACDB5B2C11CB340067EB6D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		1EACDB5D2C11CB620067EB6D /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
+		1EACDB602C11CD100067EB6D /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
 		63EFD41022C3AC6A53D04084 /* Pods-KinjalGitRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinjalGitRepositories.release.xcconfig"; path = "Target Support Files/Pods-KinjalGitRepositories/Pods-KinjalGitRepositories.release.xcconfig"; sourceTree = "<group>"; };
 		89C603F72EC42E517CEA3AE2 /* Pods_KinjalGitRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinjalGitRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,7 +168,7 @@
 			children = (
 				1EACDB4B2C11C6420067EB6D /* NetworkManager */,
 				1EACDB482C11C6150067EB6D /* CoreDataManager */,
-				1EACDADB2C11AA910067EB6D /* RepositoriesList */,
+				1EACDB592C11CAE80067EB6D /* ViewController */,
 				1EACDAE52C11ABE00067EB6D /* Resources */,
 				1EACDA5A2C118FFE0067EB6D /* AppDelegate.swift */,
 				1EACDA602C118FFE0067EB6D /* Main.storyboard */,
@@ -300,6 +306,41 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		1EACDB582C11CAD30067EB6D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDB5F2C11CCF40067EB6D /* ViewModel */,
+				1EACDB5A2C11CAF50067EB6D /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1EACDB592C11CAE80067EB6D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDADB2C11AA910067EB6D /* RepositoriesList */,
+				1EACDB582C11CAD30067EB6D /* Details */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1EACDB5A2C11CAF50067EB6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDB5B2C11CB340067EB6D /* Detail.storyboard */,
+				1EACDB5D2C11CB620067EB6D /* RepositoryDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EACDB5F2C11CCF40067EB6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDB602C11CD100067EB6D /* RepositoryDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8608AECFC69CA49F9737E608 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +423,7 @@
 				1EACDA6A2C1190000067EB6D /* Base in Resources */,
 				1EACDAE02C11AABF0067EB6D /* Repositories.storyboard in Resources */,
 				1EACDA622C118FFE0067EB6D /* Base in Resources */,
+				1EACDB5C2C11CB340067EB6D /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +503,7 @@
 				1EACDB252C11AC020067EB6D /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				1EACDB232C11AC020067EB6D /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
 				1EACDB162C11AC020067EB6D /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				1EACDB5E2C11CB620067EB6D /* RepositoryDetailsViewController.swift in Sources */,
 				1EACDB572C11C7520067EB6D /* RepositoriesTableViewCell.swift in Sources */,
 				1EACDB222C11AC020067EB6D /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
 				1EACDB282C11AC020067EB6D /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
@@ -481,6 +524,7 @@
 				1EACDAE42C11ABCB0067EB6D /* RepositoriesModel.swift in Sources */,
 				1EACDB1C2C11AC020067EB6D /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
 				1EACDB102C11AC020067EB6D /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				1EACDB612C11CD100067EB6D /* RepositoryDetailsViewModel.swift in Sources */,
 				1EACDB1A2C11AC020067EB6D /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
 				1EACDB382C11ACD10067EB6D /* UtilityClass.swift in Sources */,
 			);

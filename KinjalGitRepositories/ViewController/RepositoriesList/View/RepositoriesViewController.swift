@@ -82,7 +82,7 @@ extension RepositoriesViewController : UITableViewDataSource,UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: tableviewCellName.RepositoriesTableviewCell.rawValue, for: indexPath) as! RepositoriesTableViewCell
         let repository = viewModel.repositories[indexPath.row]
         cell.lblRepoName.text = repository.name
-        cell.lblCount.text = "Count: \(repository.stargazersCount)"
+        cell.lblCount.text = "Stars: \(repository.stargazersCount)"
         cell.btnBookmark.isSelected = repository.isBookmarked
         cell.bookmarkedClick = {
             if repository.isBookmarked {
@@ -97,6 +97,19 @@ extension RepositoriesViewController : UITableViewDataSource,UITableViewDelegate
             }
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var repository = viewModel.repositories[indexPath.row]
+        let detailvc = RepositoryDetailsViewController.instantiate(appStoryboard: .Detail) as! RepositoryDetailsViewController
+        detailvc.repository = repository
+        detailvc.updatestatus = { (objrepository) in
+            repository = objrepository
+            DispatchQueue.main.async {
+                self.RepositoriesTableview.reloadRows(at: [indexPath], with: .automatic)
+            }
+        }
+        navigationController?.pushViewController(detailvc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

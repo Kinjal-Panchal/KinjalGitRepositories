@@ -23,16 +23,16 @@ class UtilityClass : NSObject
     {
         
         let appearance = UINavigationBarAppearance()
-            appearance.backgroundColor = .red
+            appearance.backgroundColor = UIColor.hexStringToUIColor(hex: "2A5A2A")
         navigationController.navigationBar.scrollEdgeAppearance = appearance
         navigationController.navigationBar.standardAppearance = appearance
         navigationController.navigationBar.prefersLargeTitles = false
         navigationController.navigationBar.barTintColor = UIColor.yellow
-        navigationController.navigationBar.tintColor = UIColor.white
+        navigationController.navigationBar.tintColor = UIColor.black
         
         let longTitleLabel = UILabel()
         longTitleLabel.text = strTitle
-        longTitleLabel.textColor = .white
+        longTitleLabel.textColor = UIColor.hexStringToUIColor(hex: "161616")
         longTitleLabel.font = UIFont.systemFont(ofSize: 20)
         longTitleLabel.sizeToFit()
         if(position == .left)

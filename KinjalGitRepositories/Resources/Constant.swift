@@ -11,6 +11,7 @@ import Alamofire
 
 enum AppStoryboard: String{
     case Repositories = "Repositories"
+    case Detail = "Detail"
 }
 
 enum tableviewCellName: String {
