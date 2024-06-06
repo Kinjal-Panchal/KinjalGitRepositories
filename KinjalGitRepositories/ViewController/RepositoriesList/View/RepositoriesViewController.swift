@@ -42,7 +42,7 @@ class RepositoriesViewController: UIViewController {
         refreshControl.addTarget(self, action:
                                     #selector(self.handleRefresh(_:)),
                                  for: UIControl.Event.valueChanged)
-        refreshControl.tintColor = .red
+        refreshControl.tintColor = UIColor.hexStringToUIColor(hex: "2A5A2A")
         RepositoriesTableview.addSubview(refreshControl)
     }
     
