@@ -14,7 +14,7 @@ enum AppStoryboard: String{
 }
 
 enum tableviewCellName: String {
-    case RepositoriesTableviewCell = "RepositoriesTableviewCell"
+    case RepositoriesTableviewCell = "RepositoriesTableViewCell"
 }
 
 extension UIViewController {

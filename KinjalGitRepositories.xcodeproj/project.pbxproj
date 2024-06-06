@@ -55,6 +55,12 @@
 		1EACDB342C11AC020067EB6D /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB0D2C11AC020067EB6D /* NVActivityIndicatorViewable.swift */; };
 		1EACDB362C11AC1C0067EB6D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB352C11AC1C0067EB6D /* Constant.swift */; };
 		1EACDB382C11ACD10067EB6D /* UtilityClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB372C11ACD10067EB6D /* UtilityClass.swift */; };
+		1EACDB4A2C11C6240067EB6D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB492C11C6240067EB6D /* CoreDataManager.swift */; };
+		1EACDB4D2C11C6530067EB6D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB4C2C11C6530067EB6D /* NetworkManager.swift */; };
+		1EACDB4F2C11C6960067EB6D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB4E2C11C6960067EB6D /* Extension.swift */; };
+		1EACDB522C11C6D00067EB6D /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB512C11C6D00067EB6D /* RepositoriesViewModel.swift */; };
+		1EACDB562C11C7520067EB6D /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EACDB552C11C7520067EB6D /* RepositoriesTableViewCell.xib */; };
+		1EACDB572C11C7520067EB6D /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EACDB542C11C7520067EB6D /* RepositoriesTableViewCell.swift */; };
 		3AE6620705615A3CD357ACAC /* Pods_KinjalGitRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C603F72EC42E517CEA3AE2 /* Pods_KinjalGitRepositories.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +117,12 @@
 		1EACDB0D2C11AC020067EB6D /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
 		1EACDB352C11AC1C0067EB6D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1EACDB372C11ACD10067EB6D /* UtilityClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityClass.swift; sourceTree = "<group>"; };
+		1EACDB492C11C6240067EB6D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1EACDB4C2C11C6530067EB6D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1EACDB4E2C11C6960067EB6D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		1EACDB512C11C6D00067EB6D /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		1EACDB542C11C7520067EB6D /* RepositoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewCell.swift; sourceTree = "<group>"; };
+		1EACDB552C11C7520067EB6D /* RepositoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesTableViewCell.xib; sourceTree = "<group>"; };
 		63EFD41022C3AC6A53D04084 /* Pods-KinjalGitRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinjalGitRepositories.release.xcconfig"; path = "Target Support Files/Pods-KinjalGitRepositories/Pods-KinjalGitRepositories.release.xcconfig"; sourceTree = "<group>"; };
 		89C603F72EC42E517CEA3AE2 /* Pods_KinjalGitRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinjalGitRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,8 +160,10 @@
 		1EACDA592C118FFE0067EB6D /* KinjalGitRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				1EACDAE52C11ABE00067EB6D /* Resources */,
+				1EACDB4B2C11C6420067EB6D /* NetworkManager */,
+				1EACDB482C11C6150067EB6D /* CoreDataManager */,
 				1EACDADB2C11AA910067EB6D /* RepositoriesList */,
+				1EACDAE52C11ABE00067EB6D /* Resources */,
 				1EACDA5A2C118FFE0067EB6D /* AppDelegate.swift */,
 				1EACDA602C118FFE0067EB6D /* Main.storyboard */,
 				1EACDA662C1190000067EB6D /* Assets.xcassets */,
@@ -163,7 +177,7 @@
 		1EACDADB2C11AA910067EB6D /* RepositoriesList */ = {
 			isa = PBXGroup;
 			children = (
-				1EACDADE2C11AAA90067EB6D /* ViewModel */,
+				1EACDB502C11C6B80067EB6D /* ViewModel */,
 				1EACDADD2C11AAA30067EB6D /* Model */,
 				1EACDADC2C11AA9D0067EB6D /* View */,
 			);
@@ -173,6 +187,7 @@
 		1EACDADC2C11AA9D0067EB6D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1EACDB532C11C73C0067EB6D /* Cell */,
 				1EACDADF2C11AABF0067EB6D /* Repositories.storyboard */,
 				1EACDAE12C11AB3C0067EB6D /* RepositoriesViewController.swift */,
 			);
@@ -187,19 +202,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1EACDADE2C11AAA90067EB6D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		1EACDAE52C11ABE00067EB6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				1EACDB0E2C11AC020067EB6D /* Activity Indicator */,
 				1EACDB352C11AC1C0067EB6D /* Constant.swift */,
 				1EACDB372C11ACD10067EB6D /* UtilityClass.swift */,
+				1EACDB4E2C11C6960067EB6D /* Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -256,6 +265,39 @@
 				1EACDB0D2C11AC020067EB6D /* NVActivityIndicatorViewable.swift */,
 			);
 			path = "Activity Indicator";
+			sourceTree = "<group>";
+		};
+		1EACDB482C11C6150067EB6D /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDB492C11C6240067EB6D /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		1EACDB4B2C11C6420067EB6D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDB4C2C11C6530067EB6D /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		1EACDB502C11C6B80067EB6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDB512C11C6D00067EB6D /* RepositoriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1EACDB532C11C73C0067EB6D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1EACDB542C11C7520067EB6D /* RepositoriesTableViewCell.swift */,
+				1EACDB552C11C7520067EB6D /* RepositoriesTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8608AECFC69CA49F9737E608 /* Frameworks */ = {
@@ -336,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EACDA672C1190000067EB6D /* Assets.xcassets in Resources */,
+				1EACDB562C11C7520067EB6D /* RepositoriesTableViewCell.xib in Resources */,
 				1EACDA6A2C1190000067EB6D /* Base in Resources */,
 				1EACDAE02C11AABF0067EB6D /* Repositories.storyboard in Resources */,
 				1EACDA622C118FFE0067EB6D /* Base in Resources */,
@@ -391,7 +434,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EACDB4D2C11C6530067EB6D /* NetworkManager.swift in Sources */,
 				1EACDB1B2C11AC020067EB6D /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				1EACDB4F2C11C6960067EB6D /* Extension.swift in Sources */,
 				1EACDB152C11AC020067EB6D /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
 				1EACDB132C11AC020067EB6D /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
 				1EACDB192C11AC020067EB6D /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
@@ -399,6 +444,7 @@
 				1EACDB292C11AC020067EB6D /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
 				1EACDB262C11AC020067EB6D /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
 				1EACDB2A2C11AC020067EB6D /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				1EACDB522C11C6D00067EB6D /* RepositoriesViewModel.swift in Sources */,
 				1EACDB332C11AC020067EB6D /* NVActivityIndicatorView.swift in Sources */,
 				1EACDB302C11AC020067EB6D /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
 				1EACDA5B2C118FFE0067EB6D /* AppDelegate.swift in Sources */,
@@ -415,6 +461,7 @@
 				1EACDB252C11AC020067EB6D /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				1EACDB232C11AC020067EB6D /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
 				1EACDB162C11AC020067EB6D /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				1EACDB572C11C7520067EB6D /* RepositoriesTableViewCell.swift in Sources */,
 				1EACDB222C11AC020067EB6D /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
 				1EACDB282C11AC020067EB6D /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
 				1EACDB1F2C11AC020067EB6D /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
@@ -424,6 +471,7 @@
 				1EACDB182C11AC020067EB6D /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
 				1EACDB202C11AC020067EB6D /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
 				1EACDB2D2C11AC020067EB6D /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				1EACDB4A2C11C6240067EB6D /* CoreDataManager.swift in Sources */,
 				1EACDB112C11AC020067EB6D /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
 				1EACDB362C11AC1C0067EB6D /* Constant.swift in Sources */,
 				1EACDB322C11AC020067EB6D /* NVActivityIndicatorShape.swift in Sources */,
@@ -588,6 +636,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F8P69WJ4NP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KinjalGitRepositories/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -617,6 +666,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F8P69WJ4NP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KinjalGitRepositories/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
